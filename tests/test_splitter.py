@@ -4,7 +4,7 @@ from tests.test_loader import document_list
 
 splitter = RecursiveCharacterTextSplitter(
     chunk_size=1000,
-    chunk_overlap=200
+    chunk_overlap=100
 )
 
 chunks = []
