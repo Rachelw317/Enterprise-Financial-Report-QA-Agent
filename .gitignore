@@ -1,0 +1,6 @@
+# Environment
+.venv
+
+# API Keys
+.env
+
