@@ -1,8 +1,66 @@
-# Environment
-.venv
+# =========================
+# Python
+# =========================
 
-# API Keys
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# =========================
+# Environment / secrets
+# =========================
+
 .env
+.env.*
+!.env.example
 
-# Vector database
-data/vectorstore
+# =========================
+# macOS
+# =========================
+
+.DS_Store
+
+# =========================
+# IDE
+# =========================
+
+.vscode/
+.idea/
+
+# =========================
+# Jupyter
+# =========================
+
+.ipynb_checkpoints/
+
+# =========================
+# Logs
+# =========================
+
+*.log
+
+# =========================
+# RAG / Vector Store
+# =========================
+
+# ChromaDB local vector database
+data/vectorstore/
+
+# =========================
+# Temporary files
+# =========================
+
+*.tmp
+*.temp
