@@ -1,0 +1,492 @@
+[
+  {
+    "id": "fact_simple_01",
+    "query": "2025年营业收入是多少？",
+    "type": "fact",
+    "expected_answer": "2025年营业收入约为人民币1,142.470百万元（1,142,470千元），较2024年增长约25.6%。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 8,
+        "data_year": [2025]
+      },
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 11,
+        "data_year": [2025]
+      }
+    ]
+  },
+  {
+    "id": "fact_simple_02",
+    "query": "2025年毛利率是多少？",
+    "type": "fact",
+    "expected_answer": "2025年毛利率为73.6%，2024年为68.5%。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 12,
+        "data_year": [2025, 2024]
+      }
+    ]
+  },
+  {
+    "id": "fact_simple_03",
+    "query": "2025年SaaS客户总数是多少？",
+    "type": "fact",
+    "expected_answer": "2025年SaaS客户总数为113.0千名，较2024年的88.4千名增长27.8%。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 12,
+        "data_year": [2025, 2024]
+      }
+    ]
+  },
+  {
+    "id": "fact_simple_04",
+    "query": "2025年末员工总数是多少？",
+    "type": "fact",
+    "expected_answer": "2025年12月31日，本集团合共有2,552名员工；2024年12月31日为2,758名。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 20,
+        "data_year": [2025, 2024]
+      }
+    ]
+  },
+  {
+    "id": "fact_medium_01",
+    "query": "2025年研发开支是多少？",
+    "type": "fact",
+    "expected_answer": "2025年研发开支约为人民币243.1百万元（243,141千元），较2024年的约239.8百万元增长约1.4%。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 13,
+        "data_year": [2025, 2024]
+      },
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 105,
+        "data_year": [2025, 2024]
+      }
+    ]
+  },
+  {
+    "id": "fact_medium_02",
+    "query": "2025年经调整净利润（非国际财务报告准则计量）是多少？",
+    "type": "fact",
+    "expected_answer": "2025年经调整净利润约为人民币230.868百万元，较2024年的约60.412百万元增长约282.2%。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 15,
+        "data_year": [2025, 2024]
+      },
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 16,
+        "data_year": [2025, 2024]
+      }
+    ]
+  },
+  {
+    "id": "fact_medium_03",
+    "query": "2025年末现金及现金等价物是多少？",
+    "type": "fact",
+    "expected_answer": "2025年12月31日，现金及现金等价物约为人民币3,052.581百万元（3,052,581千元），2024年末约为1,085.276百万元。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 17,
+        "data_year": [2025, 2024]
+      },
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 110,
+        "data_year": [2025, 2024]
+      },
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 186,
+        "data_year": [2025, 2024]
+      }
+    ]
+  },
+  {
+    "id": "fact_medium_04",
+    "query": "2025年末合同负债是多少？",
+    "type": "fact",
+    "expected_answer": "2025年12月31日，合同负债约为人民币2,257.450百万元（2,257,450千元），较2024年末的约1,954.966百万元增加。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 18,
+        "data_year": [2025, 2024]
+      },
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 160,
+        "data_year": [2025, 2024]
+      },
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 161,
+        "data_year": [2025, 2024]
+      }
+    ]
+  },
+  {
+    "id": "fact_hard_01",
+    "query": "2025年研发开支占营业收入的比例是多少？",
+    "type": "fact",
+    "expected_answer": "2025年研发开支约243.141百万元，营业收入约1,142.470百万元，研发开支占营业收入比例约为21.3%（243.141/1,142.470）。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 8,
+        "data_year": [2025]
+      },
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 105,
+        "data_year": [2025]
+      }
+    ]
+  },
+  {
+    "id": "fact_hard_02",
+    "query": "2025年SaaS收入金额及其占总收入比例是多少？",
+    "type": "fact",
+    "expected_answer": "2025年SaaS收入约为人民币1,104,817千元，占本集团总收入的96.8%（审计报告中按总额计算约96.7%）。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 11,
+        "data_year": [2025]
+      },
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 105,
+        "data_year": [2025]
+      }
+    ]
+  },
+  {
+    "id": "comparison_simple_01",
+    "query": "2025年营业收入较2024年增加多少？增长率是多少？",
+    "type": "comparison",
+    "expected_answer": "2025年营业收入约1,142.470百万元，2024年约909.750百万元，增加约232.720百万元，增长率约25.6%。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 8,
+        "data_year": [2025, 2024]
+      },
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 11,
+        "data_year": [2025, 2024]
+      }
+    ]
+  },
+  {
+    "id": "comparison_simple_02",
+    "query": "2025年毛利率较2024年如何变化？",
+    "type": "comparison",
+    "expected_answer": "2025年毛利率为73.6%，2024年为68.5%，提高约5.1个百分点。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 12,
+        "data_year": [2025, 2024]
+      }
+    ]
+  },
+  {
+    "id": "comparison_simple_03",
+    "query": "2025年SaaS客户总数较2024年如何变化？",
+    "type": "comparison",
+    "expected_answer": "SaaS客户总数由2024年的88.4千名增至2025年的113.0千名，增长27.8%。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 12,
+        "data_year": [2025, 2024]
+      }
+    ]
+  },
+  {
+    "id": "comparison_simple_04",
+    "query": "2025年末员工总数较2024年末如何变化？",
+    "type": "comparison",
+    "expected_answer": "员工总数由2024年末的2,758名降至2025年末的2,552名，减少206名。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 20,
+        "data_year": [2025, 2024]
+      }
+    ]
+  },
+  {
+    "id": "comparison_medium_01",
+    "query": "2025年销售及营销开支较2024年增加多少？增长率是多少？",
+    "type": "comparison",
+    "expected_answer": "销售及营销开支由2024年的约369.921百万元增至2025年的约395.886百万元，增加约25.965百万元，增长约7.0%。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 12,
+        "data_year": [2025, 2024]
+      },
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 105,
+        "data_year": [2025, 2024]
+      }
+    ]
+  },
+  {
+    "id": "comparison_medium_02",
+    "query": "2025年一般及行政开支较2024年增加多少？增长率是多少？",
+    "type": "comparison",
+    "expected_answer": "一般及行政开支由2024年的约90.489百万元增至2025年的约149.840百万元，增长约65.5%，主要由于上市开支增加及向雇员作出的以股份为基础的付款增加。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 13,
+        "data_year": [2025, 2024]
+      },
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 105,
+        "data_year": [2025, 2024]
+      }
+    ]
+  },
+  {
+    "id": "comparison_medium_03",
+    "query": "2025年末现金及现金等价物较2024年末增加多少？主要原因是什么？",
+    "type": "comparison",
+    "expected_answer": "现金及现金等价物由2024年末的约1,085.276百万元增至2025年末的约3,052.581百万元，增加约1,967.305百万元，主要归因于自上市收取的所得款项净额。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 17,
+        "data_year": [2025, 2024]
+      },
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 110,
+        "data_year": [2025, 2024]
+      },
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 186,
+        "data_year": [2025, 2024]
+      }
+    ]
+  },
+  {
+    "id": "comparison_medium_04",
+    "query": "2025年末合同负债较2024年末增加多少？主要原因是什么？",
+    "type": "comparison",
+    "expected_answer": "合同负债由2024年末的约1,954.966百万元增至2025年末的约2,257.450百万元，增加约302.484百万元，主要由于SaaS产品流水总额增加。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 18,
+        "data_year": [2025, 2024]
+      },
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 160,
+        "data_year": [2025, 2024]
+      },
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 161,
+        "data_year": [2025, 2024]
+      }
+    ]
+  },
+  {
+    "id": "comparison_hard_01",
+    "query": "为什么2025年由2024年的盈利转为亏损？",
+    "type": "comparison",
+    "expected_answer": "2025年年内亏损约1,649.780百万元，而2024年为利润约10.583百万元。主要原因是上市时将上市前已发行的可转换可赎回优先股转换为普通股，导致可转换可赎回优先股亏损约1,769.644百万元，此外还有上市开支、股份支付、汇兑亏损等影响。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 15,
+        "data_year": [2025, 2024]
+      },
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 105,
+        "data_year": [2025, 2024]
+      }
+    ]
+  },
+  {
+    "id": "comparison_hard_02",
+    "query": "2025年经调整净利润较2024年增长多少？与年内亏损差异主要来自哪些调整项？",
+    "type": "comparison",
+    "expected_answer": "经调整净利润由2024年的约60.412百万元增至2025年的约230.868百万元，增长约282.2%。与年内亏损的差异主要来自加回可转换可赎回优先股亏损1,769.644百万元、上市开支34.616百万元、向雇员作出的以股份为基础的付款29.344百万元、汇兑亏损27.245百万元及非上市股本投资公允价值亏损19.799百万元。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 15,
+        "data_year": [2025, 2024]
+      },
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 16,
+        "data_year": [2025, 2024]
+      }
+    ]
+  },
+  {
+    "id": "trend_simple_01",
+    "query": "2021年至2025年营业收入趋势如何？",
+    "type": "trend",
+    "expected_answer": "2021年至2025年收入分别为约433.422百万元、523.078百万元、697.191百万元、909.750百万元、1,142.470百万元，呈持续增长趋势。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 8,
+        "data_year": [2021, 2022, 2023, 2024, 2025]
+      }
+    ]
+  },
+  {
+    "id": "trend_simple_02",
+    "query": "2021年至2025年毛利趋势如何？",
+    "type": "trend",
+    "expected_answer": "2021年至2025年毛利分别为约219.052百万元、273.513百万元、434.606百万元、622.851百万元、841.006百万元，呈持续增长趋势。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 8,
+        "data_year": [2021, 2022, 2023, 2024, 2025]
+      }
+    ]
+  },
+  {
+    "id": "trend_simple_03",
+    "query": "2021年至2025年年内利润或亏损趋势如何？",
+    "type": "trend",
+    "expected_answer": "2021年至2025年年内利润/亏损分别为约-254.327百万元、-507.079百万元、-490.023百万元、10.583百万元、-1,649.780百万元；2024年转正后，2025年因可转换可赎回优先股公允价值变动等出现大额亏损。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 8,
+        "data_year": [2021, 2022, 2023, 2024, 2025]
+      }
+    ]
+  },
+  {
+    "id": "trend_simple_04",
+    "query": "2021年至2025年经调整净利润或亏损趋势如何？",
+    "type": "trend",
+    "expected_answer": "2021年至2025年经调整净利润/亏损分别为约-173.628百万元、-368.577百万元、-207.404百万元、60.412百万元、230.868百万元；2024年转正，2025年进一步增长。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 8,
+        "data_year": [2021, 2022, 2023, 2024, 2025]
+      }
+    ]
+  },
+  {
+    "id": "trend_medium_01",
+    "query": "2021年至2025年总资产趋势如何？",
+    "type": "trend",
+    "expected_answer": "2021年至2025年总资产分别约为1,469.995百万元、1,458.512百万元、1,743.112百万元、2,215.325百万元、4,232.982百万元，总体增长，2025年大幅增加。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 8,
+        "data_year": [2021, 2022, 2023, 2024, 2025]
+      }
+    ]
+  },
+  {
+    "id": "trend_medium_02",
+    "query": "2021年至2025年总负债趋势如何？",
+    "type": "trend",
+    "expected_answer": "2021年至2025年总负债分别约为2,502.538百万元、2,971.579百万元、5,416.333百万元、5,864.821百万元、3,011.454百万元，先上升后于2025年明显下降。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 8,
+        "data_year": [2021, 2022, 2023, 2024, 2025]
+      }
+    ]
+  },
+  {
+    "id": "trend_medium_03",
+    "query": "2021年至2025年权益或亏损总额趋势如何？",
+    "type": "trend",
+    "expected_answer": "2021年至2025年权益/亏损总额分别约为-1,032.543百万元、-1,513.067百万元、-3,673.221百万元、-3,649.496百万元、1,221.528百万元，2025年由亏损转为正权益。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 8,
+        "data_year": [2021, 2022, 2023, 2024, 2025]
+      }
+    ]
+  },
+  {
+    "id": "trend_medium_04",
+    "query": "2021年至2025年毛利率趋势如何？",
+    "type": "trend",
+    "expected_answer": "根据收入与毛利计算，2021年至2025年毛利率分别约为50.5%、52.3%、62.3%、68.5%、73.6%，呈持续上升趋势。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 8,
+        "data_year": [2021, 2022, 2023, 2024, 2025]
+      }
+    ]
+  },
+  {
+    "id": "trend_hard_01",
+    "query": "2021年至2025年营业收入的复合年增长率约为多少？",
+    "type": "trend",
+    "expected_answer": "以2021年收入约433.422百万元和2025年收入约1,142.470百万元计算，四年复合年增长率约为27.4%。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 8,
+        "data_year": [2021, 2025]
+      }
+    ]
+  },
+  {
+    "id": "trend_hard_02",
+    "query": "2021年至2025年权益从亏损转为正权益的主要原因是什么？",
+    "type": "trend",
+    "expected_answer": "权益总额由2024年的约-3,649.496百万元转为2025年的约1,221.528百万元，主要由于2025年10月上市，全球发售所得款项净额约2,237.9百万港元，以及可转换可赎回优先股于上市时转换为普通股等资本结构变化。",
+    "required_evidence": [
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 8,
+        "data_year": [2021, 2022, 2023, 2024, 2025]
+      },
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 40,
+        "data_year": [2025]
+      },
+      {
+        "source": "FinancialReport2025.pdf",
+        "page": 109,
+        "data_year": [2025, 2024]
+      }
+    ]
+  }
+]

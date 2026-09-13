@@ -4,6 +4,7 @@ from typing import Any, Protocol
 from app.generation.context import format_context
 from app.generation.prompt import build_prompt
 from app.retrieval.retriever import Retriever, create_retriever
+from app.schemas.document import Document
 from app.schemas.query import Query
 
 
@@ -26,6 +27,15 @@ class RAGPipeline:
 		"""Retrieve fresh documents and answer one query."""
 		validated_query = query if isinstance(query, Query) else Query(text=query)
 		documents = self.retriever.retrieve(validated_query)
+		return self.answer_with_documents(validated_query, documents)
+
+	def answer_with_documents(
+		self,
+		query: Query | str,
+		documents: list[Document],
+	) -> str:
+		"""Generate an answer from already retrieved documents."""
+		validated_query = query if isinstance(query, Query) else Query(text=query)
 		context = format_context(documents)
 		response = self.llm.invoke(build_prompt(validated_query, context))
 		return self._response_text(response)
