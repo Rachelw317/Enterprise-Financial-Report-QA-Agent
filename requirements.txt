@@ -1,0 +1,11 @@
+chromadb
+FlagEmbedding
+langchain-chroma
+langchain-community
+langchain-core
+langchain-deepseek
+langchain-text-splitters
+langgraph
+pydantic>=2
+PyMuPDF
+python-dotenv
